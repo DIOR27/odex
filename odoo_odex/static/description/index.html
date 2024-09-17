@@ -22,11 +22,7 @@
         of your model, for example:
         <br /><br />
         <code>
-            name = fields.Char(<br />
-            &#9;string=_(“Name”),<br />
-            &#9;required=True,<br />
-            &#9;<b>regex=r"^[A-Z0-9]+$"</b>,<br />
-            )
+            name = fields.Char(string=_(“Name”), regex=r"^[A-Z0-9]+$")
         </code>
         <br />
         When not matching the regular expression, the system will display a <code>ValidationError</code> indicating the value and the
