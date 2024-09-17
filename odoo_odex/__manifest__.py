@@ -14,4 +14,7 @@ Odex is a simple but powerful module for managing regular expressions in fields.
     "application": False,
     "installable": True,
     "support": "dorellana@agencialava.com",
+    "images": [
+        "static/description/banner.jpg",
+    ],
 }
