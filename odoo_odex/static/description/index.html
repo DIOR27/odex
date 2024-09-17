@@ -8,13 +8,29 @@
 <body>
     <h1>Odex - The Odoo RegEx Module</h1>
 
-    <h3>
+    <h4>
         Odex is a simple but powerful module for managing regular expressions in fields.
-    </h3>
+    </h4>
     <p>
         This Odoo module customizes the behavior of the <code>Char</code> field by introducing a new <code>regex</code> parameter. It allows you to define
         a regular expression pattern that the field value must match. If the value provided does not conform to the specified
         pattern, a <code>ValidationError</code> is raised.
+    </p>
+    <h3>Usage</h3>
+    <p>
+        To use odex, simply add the parameter <code>regex</code> together with the string to be evaluated in the char field (<code>fields.Char</code>)
+        of your model, for example:
+        
+        <code>
+            name = fields.Char(
+                string=_(“Name”),
+                required=True,
+                <b>regex=r"^[A-Z0-9]+$"</b>,
+            )
+        </code>
+        
+        When not matching the regular expression, the system will display a <code>ValidationError</code> indicating the value and the
+        expected expression.
     </p>
 </body>
 </html>
