@@ -8,9 +8,12 @@
     "description": """
 Odex is a simple but powerful module for managing regular expressions in fields.
     """,
-    "author": "Diego Orellana Ávila",
+    "author": "DIOR72",
     "website": "https://github.com/DIOR27/odex",
     "category": "Technical",
     "application": False,
     "installable": True,
+    "price": 1.99,
+    "currency": "USD",
+    "support": "dorellana@agencialava.com",
 }
