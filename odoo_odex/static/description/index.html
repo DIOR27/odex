@@ -20,15 +20,15 @@
     <p>
         To use odex, simply add the parameter <code>regex</code> together with the string to be evaluated in the char field (<code>fields.Char</code>)
         of your model, for example:
-        
+        <br /><br />
         <code>
-            name = fields.Char(
-                string=_(“Name”),
-                required=True,
-                <b>regex=r"^[A-Z0-9]+$"</b>,
+            name = fields.Char(<br />
+                string=_(“Name”),<br />
+                required=True,<br />
+                <b>regex=r"^[A-Z0-9]+$"</b>,<br />
             )
         </code>
-        
+        <br />
         When not matching the regular expression, the system will display a <code>ValidationError</code> indicating the value and the
         expected expression.
     </p>
