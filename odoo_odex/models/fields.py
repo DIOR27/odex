@@ -2,11 +2,9 @@ from odoo import fields, _
 from odoo.exceptions import ValidationError
 import re
 
-# Guardar la implementación original del método __init__ de fields.Char
 _original_char_init = fields.Char.__init__
 
 
-# Personalizar la inicialización del campo Char para aceptar un parámetro de regex
 def custom_char_init(self, string=None, regex=None, **kwargs):
     if string is None:
         string = ""
