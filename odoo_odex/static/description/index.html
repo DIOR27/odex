@@ -25,8 +25,15 @@
             name = fields.Char(string=_(“Name”), regex=r"^[A-Z0-9]+$")
         </code>
         <br />
+        <br />
         When not matching the regular expression, the system will display a <code>ValidationError</code> indicating the value and the
         expected expression.
+    </p>
+    <p>
+        <b>Note:</b> The <code>regex</code> parameter is case-sensitive.
+    </p>
+    <p>
+        If you like my work please leave me a star on GitHub, I'd really appreciate it.
     </p>
 </body>
 </html>
